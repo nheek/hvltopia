@@ -1,0 +1,11 @@
+.hero {
+    margin: 22rem 4rem;
+
+    h2 {
+        font-size: 6rem;
+        word-spacing: 0.5rem;
+    }
+    p {
+        word-spacing: 0.125rem;
+    }
+}
