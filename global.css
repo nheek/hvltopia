@@ -1,6 +1,5 @@
 * {
     font-family: "Inter", sans-serif;
-    color: #F1F1F1;
 }
 body {
     padding: 0;
@@ -25,7 +24,7 @@ header nav {
         gap: 2rem;
         padding: 0;
     }
-    a {
+    .kontaktBtn {
         /* width: 20%; */
         text-decoration: none;
         text-align: center;
@@ -38,6 +37,10 @@ header nav {
 }
 h1, h2, h3, h4, h5, h6 {
     margin: 0;
+}
+a {
+    text-decoration: none;
+    color: inherit;
 }
 .bg {
     background: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.40)) 0% 0% / cover, linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.60)), url("/public/hero.jpg");
