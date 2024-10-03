@@ -18,6 +18,11 @@ jobs:
       with:
         ssh-private-key: ${{ secrets.SERVER_SSH_KEY }}
 
+    - name: Add SSH host to known_hosts
+      run: |
+        mkdir -p ~/.ssh
+        ssh-keyscan -H ${{ secrets.SERVER_IP }} >> ~/.ssh/known_hosts
+
     - name: Sync Files to Server
       run: |
         rsync -avz --delete ./ ${{ secrets.SERVER_USERNAME }}@${{ secrets.SERVER_IP }}:/root/apps/hvltopia/ --exclude ".git/" --exclude ".github/"
