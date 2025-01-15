@@ -5,9 +5,9 @@ metadata:
   labels:
     app: hvltopia
 spec:
-  type: ClusterIP
+  type: LoadBalancer
   ports:
-    - port: 80
+    - port: 30102
       targetPort: 3000
   selector:
     app: hvltopia

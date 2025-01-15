@@ -15,10 +15,10 @@ spec:
         app: hvltopia
     spec:
       imagePullSecrets:
-        - name: regcrednheek
+        - name: regcrednheekghcr
       containers:
         - name: hvltopia
-          image: reg.nheek.com/nheek/hvltopia:latest
+          image: ghcr.io/nheek/hvltopia:latest
           ports:
             - containerPort: 3000
           resources:
