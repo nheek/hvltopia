@@ -3,6 +3,6 @@ services:
     build: .
     restart: unless-stopped
     ports:
-      - 3000:3000
+      - 6602:3000
     image: "ghcr.io/nheek/hvltopia:latest"
     platform: linux/amd64
